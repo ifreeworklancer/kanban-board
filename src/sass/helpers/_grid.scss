@@ -1,0 +1,50 @@
+.container {
+  padding: 0 $col-padding-x;
+}
+
+.row {
+  display: flex;
+  margin: 0 -#{$col-padding-x};
+
+  [class*='col-'] {
+    position: relative;
+    flex: 0 0 auto;
+    padding: 0 $col-padding-x;
+  }
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.3333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+@each $screen, $width in $screens {
+  @media (min-width: $width) {
+    .col-#{$screen}\-12 {
+      width: 100%;
+    }
+
+    .col-#{$screen}\-6 {
+      width: 50%;
+    }
+
+    .col-#{$screen}\-4 {
+      width: 33.3333%;
+    }
+
+    .col-#{$screen}\-3 {
+      width: 25%;
+    }
+  }
+}

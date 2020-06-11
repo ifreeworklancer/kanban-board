@@ -1,0 +1,17 @@
+@import "~normalize.css/normalize.css";
+@import "~dragula/dist/dragula.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@import "config/variables";
+@import "config/placeholders";
+
+@import "helpers/grid";
+@import "helpers/width";
+
+@import "base/base";
+@import "base/btn";
+
+@import "modules/alert";
+
+@import "layout/kanban";
+
